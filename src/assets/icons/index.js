@@ -26,8 +26,12 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import bootstrap from './bootstrap.svg'
+import mongoose from './mongoose.svg'
 
 export {
+    mongoose,
+    bootstrap,
     css,
     express,
     git,
