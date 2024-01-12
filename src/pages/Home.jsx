@@ -7,6 +7,7 @@ import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
 
+
 {/* <div
         className='absolute top-28 left-0 right-0 z-10 flex item-center justify-center'
       >

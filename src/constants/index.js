@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, starbucks, webdevcert, tscourse } from "../assets/images";
 import {
     mongoose,
     bootstrap,
@@ -120,6 +120,66 @@ export const skills = [
         type: "Frontend"
     }
 ];
+export const qualifications = [
+    {
+        id: 1,
+        title: "The Web Developer Bootcamp 2024",
+        instructor: "Colt Steele",
+        platform: "Udemy",
+        date: "November 2023",
+        length: "74 total hours",
+        certificateNumber: "UC-77050143-681d-4faa-8772-1ee5fb7f4e14",
+        CertUrl: "ude.my/UC-77050143-681d-4faa-8772-1ee5fb7f4e14",
+        img: webdevcert,
+        description: [
+            "The ins and outs of HTML5, CSS3, and Modern JavaScript for",
+            "Create responsive, accessible, and beautiful layouts",
+            "Create a complicated yelp-like application from scratch",
+            "Create static HTML and CSS portfolio sites and landing pages",
+            "Create complex HTML forms with validations",
+            "Implement responsive navbars on websites",
+            "Use CSS Frameworks including Bootstrap 5, TailwindCss and Material-UI",
+            "Use common JS data structures like Arrays and Objects",
+            "Use JavaScript variables, conditionals, loops, functions, arrays, and objects",
+            "Manipulate the DOM with vanilla JS",
+            "Use Postman to monitor and test APIs",
+            "Write complex web apps with multiple models and data associations",
+            "Use Express and MongoDB to create full-stack JS applications",
+            "Master the command line interface",
+            "Understand the ins and outs of HTTP requests",
+            "Implement user authentication",
+            "Create single page applications with AJAX",
+            "Make REAL web applications using cutting-edge technologies",
+            "Recognize and prevent common security exploits like SQL-Injection & XSS",
+            "Create a blog application from scratch using Node, Express, and MongoDB",
+            "Deploy applications that work with cloud databases",
+            "Implement full authentication from scratch",
+            "Write Javascript functions, and understand scope and higher order functions",
+            "Create full-stack web applications from scratch",
+            "Write JavaScript based browser games",
+            "Use NodeJS to write server-side JavaScript",
+            "Use NPM to install all sorts of useful packages",
+            "Create a beautiful, responsive landing page for a startup",
+        ],
+    },
+    {
+        id:2,
+        title: "Mastering TypeScript 2024 Edition",
+        instructor: "Colt Steele",
+        platform: "Udemy",
+        date: "January 2024",
+        length: "11 hours",
+        certificateNumber: "UC-3b9045d8-4e25-48b6-9a9f-e5a3fbaef536",
+        CertUrl: "ude.my/UC-3b9045d8-4e25-48b6-9a9f-e5a3fbaef536",
+        img: tscourse,
+        description: [
+            "The ins and outs of ALL of TypeScript's syntax",
+            "TypeScript Interfaces, Generics, Classes, Modules, and more",
+            "Integrate TypeScript with Webpack",
+            "Use TypeScript with ReactJS",
+        ]
+    }
+]
 
 
 export const socialLinks = [

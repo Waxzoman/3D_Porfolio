@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import logoOmar3 from "../assets/logo/logoOmar3.svg"
 
 
 const Navbar = () => {
@@ -6,8 +7,10 @@ const Navbar = () => {
     <header className="header">
           <NavLink
               to="/"
-              className="w-10 h-10 rounder-lg bg-white items-center justify-center flex font-bold shadow-md">
-              <p className="blue-gradient_text">OM</p>
+              className="w-32 h-20 rounder-lg bg-blue items-center justify-center flex font-bold shadow-md"
+          >
+              {/* <p className="blue-gradient_text">OM</p> */}
+              <img src={logoOmar3} alt="logo" className="size-14" />
           </NavLink>
           <nav
               className="flex text-lg gap-7 font-medium"
