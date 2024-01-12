@@ -1,7 +1,10 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import CTA from '../components/CTA';
 import 'react-vertical-timeline-component/style.min.css';
 import { skills, qualifications } from '../constants';
+import logoOmar2 from "../assets/logo/LogoOmar2.svg"
+
 
 
 const About = () => {
@@ -43,6 +46,19 @@ const About = () => {
               <VerticalTimelineElement
                 key={qualification.id}
                 date={qualification.date}
+                icon={
+                  <div className='flex justify-center items-center w-full h-full'>
+                    <img
+                      src={logoOmar2}
+                      alt="logo"
+                    />
+                  </div>
+                }
+                contentStyle={{
+                  borderBottom: '8px',
+                  borderStyle: 'solid',
+                  boxShadow: 'none'
+                }}
               >
                 <div>
                   <h3 className='text-black text-xl font-poppins first-letter font-semibold'>
@@ -66,6 +82,9 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+      <hr className='border-slate-200' />
+      
+      <CTA />
     </section>
   )
 }
