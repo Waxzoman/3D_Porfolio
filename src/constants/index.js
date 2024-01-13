@@ -26,6 +26,7 @@ import {
     tailwindcss,
     threads,
     typescript,
+    threejs
 } from "../assets/icons";
 
 export const skills = [
@@ -118,6 +119,11 @@ export const skills = [
         imageUrl: bootstrap,
         name: "Bootstrap",
         type: "Frontend"
+    },
+    {
+        imageUrl: threejs,
+        name: "Threejs",
+        type: "Frontend"
     }
 ];
 export const qualifications = [
@@ -129,7 +135,7 @@ export const qualifications = [
         date: "November 2023",
         length: "74 total hours",
         certificateNumber: "UC-77050143-681d-4faa-8772-1ee5fb7f4e14",
-        CertUrl: "ude.my/UC-77050143-681d-4faa-8772-1ee5fb7f4e14",
+        CertUrl: "https://www.ude.my/UC-77050143-681d-4faa-8772-1ee5fb7f4e14",
         img: webdevcert,
         description: [
             "The ins and outs of HTML5, CSS3, and Modern JavaScript for",
@@ -138,7 +144,7 @@ export const qualifications = [
             "Create static HTML and CSS portfolio sites and landing pages",
             "Create complex HTML forms with validations",
             "Implement responsive navbars on websites",
-            "Use CSS Frameworks including Bootstrap 5, TailwindCss and Material-UI",
+            "Use CSS Frameworks including Bootstrap 5, TailwindCSS and Material-UI",
             "Use common JS data structures like Arrays and Objects",
             "Use JavaScript variables, conditionals, loops, functions, arrays, and objects",
             "Manipulate the DOM with vanilla JS",
@@ -162,15 +168,16 @@ export const qualifications = [
             "Create a beautiful, responsive landing page for a startup",
         ],
     },
+ 
     {
-        id:2,
+        id: 2,
         title: "Mastering TypeScript 2024 Edition",
         instructor: "Colt Steele",
         platform: "Udemy",
         date: "January 2024",
         length: "11 hours",
         certificateNumber: "UC-3b9045d8-4e25-48b6-9a9f-e5a3fbaef536",
-        CertUrl: "ude.my/UC-3b9045d8-4e25-48b6-9a9f-e5a3fbaef536",
+        CertUrl: "https://www.ude.my/UC-3b9045d8-4e25-48b6-9a9f-e5a3fbaef536",
         img: tscourse,
         description: [
             "The ins and outs of ALL of TypeScript's syntax",
@@ -178,8 +185,41 @@ export const qualifications = [
             "Integrate TypeScript with Webpack",
             "Use TypeScript with ReactJS",
         ]
+    },
+];
+
+export const sideSkills = [
+    {
+        id: 3,
+        title: "What else I can do?",
+        description: [
+            "Set up RESTful APIs",
+            "Create light/dark mode pages with dynamic UI elements using vanillajs",
+            "Use Threejs library to create stunnig 3D elements in Javascript",
+            "Use React-three-fiber and its ecosystem to create 3D components in Reactjs",
+            "Import and optimize 3D files for faster rendering in Threejs canvas",
+            "Implementing postprocessing methods in .jsx and .tsx files for 3D elements",
+            "Implementing animations of 3D elements to work with UI",
+            "Setting up Mongoose ODM in the back-end to work with Mongo Database",
+            "Create schemas for noSQL databases",
+            "Optimizing code for space/time complexity",
+        ]
+    },
+    {
+        id: 4,
+        title: "Soft Skills",
+        description: [
+            "Communication, communication and communication",
+            "Honesty - Understanding my weaknesses, working on them and being open to criticism from my seniors and co-workers",
+            "Problem-solving. I do not rest till the issue is resolved",
+            "If I don't know something, I make sure I listen and learn",
+            "Adaptability - Constant education and learning new technologies to be on top of trends",
+            "Listening - I'm attentive to what my seniors and co-workers convey to me",
+            "Open-minded - Always open to new ideas and opinions",
+            "Emotional inteligence and composure",
+        ]
     }
-]
+];
 
 
 export const socialLinks = [

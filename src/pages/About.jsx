@@ -2,7 +2,7 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import CTA from '../components/CTA';
 import 'react-vertical-timeline-component/style.min.css';
-import { skills, qualifications } from '../constants';
+import { skills, qualifications, sideSkills } from '../constants';
 import logoOmar2 from "../assets/logo/LogoOmar2.svg"
 
 
@@ -66,12 +66,52 @@ const About = () => {
                   </h3>
                   <p>by: {qualification.instructor}</p>
                   <img src={qualification.img} alt="" />
+                  <a
+                    href={qualification.CertUrl}
+                    className='text-blue-800 hover:text-violet-600 hover:underline font-semibold ml-6'
+                  >
+                    Certification
+                  </a>
                 </div>
                 <ul className='my-5 list-disc ml-5 space-y-2'>
                   {qualification.description.map((desc, index) => (
                     <li
                       className='text-black-500/50 font-normal pl-1 text-small'
                       key={`qualification-point-${index}`}
+                    >
+                      {desc}
+                    </li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+            {sideSkills.map((skill) => (
+              <VerticalTimelineElement
+                key={skill.id}
+                icon={
+                  <div className='flex justify-center items-center w-full h-full'>
+                    <img
+                      src={logoOmar2}
+                      alt="logo"
+                    />
+                  </div>
+                }
+                contentStyle={{
+                  borderBottom: '8px',
+                  borderStyle: 'solid',
+                  boxShadow: 'none'
+                }}
+              >
+                <div>
+                  <h3 className='text-black text-xl font-poppins first-letter font-semibold'>
+                    {skill.title}
+                  </h3>
+                </div>
+                <ul className='my-5 list-disc ml-5 space-y-2'>
+                  {skill.description.map((desc, index) => (
+                    <li
+                      className='text-black-500/50 font-normal pl-1 text-small'
+                      key={`skill-point-${index}`}
                     >
                       {desc}
                     </li>

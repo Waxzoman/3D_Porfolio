@@ -28,6 +28,7 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import bootstrap from './bootstrap.svg'
 import mongoose from './mongoose.svg'
+import threejs from './threejs.svg'
 
 export {
     mongoose,
@@ -59,5 +60,6 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    threejs
 }
