@@ -206,10 +206,20 @@ export const sideSkills = [
         ]
     },
     {
-        id: 4,
+        id: 5,
+        title: "Languages",
+        description: [
+            "Polish-Native",
+            "Arabic-Native",
+            "English-C1",
+            "French-A2",
+        ]
+    },
+    {
+        id: 5,
         title: "Soft Skills",
         description: [
-            "Communication, communication and communication",
+            "Communication- I'm able to convey technical and non-technical matters concisely to my team",
             "Honesty - Understanding my weaknesses, working on them and being open to criticism from my seniors and co-workers",
             "Problem-solving. I do not rest till the issue is resolved",
             "If I don't know something, I make sure I listen and learn",
@@ -244,43 +254,37 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'YelpCamp',
+        description: 'YelpCamp is a full CRUD web app with Mongo database running on mongoose ODM. Application has integrated user authentication and authorization with security measures to prevent cross-site scripting. YelpCamp features: full CRUD capability with Express and Mongodb in Nodejs environment, error handling and data validation, Express routing with session and cookies, authorization and authentication on Passportjs, image upload with Cloudinary API, configured Mapbox api, sanitization and security measures against XSS and Mongo injection. ',
+        link: 'https://yelpcamp-y3ze.onrender.com/',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
+        name: 'SummarizerGPT',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+        link: 'https://summarizergpt.onrender.com/',
+    },
+    {
+        iconUrl: threads,
+        theme: 'btn-back-green',
+        name: 'Picture-in-picture Chrome',
+        description: 'Web-application for multi-tasking that generates picture-in-picture mode with Javascript.',
+        link: 'https://waxzoman.github.io/Picture-in-picture/',
+    },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-pink',
+        name: 'Unsplash infinite scroll',
+        description: 'Implementation of infinite scroll with unsplash API',
+        link: 'https://waxzoman.github.io/Infinite-scroll/',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-black',
+        name: 'Light/Dark mode',
+        description: 'Template website to present ligh/dark mode implementation with vanillajs and store user preferences in local storage',
+        link: 'https://waxzoman.github.io/Light-and-dark-mode/',
+    },
+    
 ];
