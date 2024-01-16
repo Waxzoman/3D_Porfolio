@@ -16,15 +16,39 @@ const PolyIsland = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>
   const rotationSpeed = useRef(0);
   const dampingFactor = 0.95
 
+  const handleTouchStart = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setIsRotating(true);
+    lastX.current = e.touches ? e.touches[0].clientX : e.clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+
+    if (isRotating) {
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const delta = (clientX - lastX.current) / viewport.width;
+      islandRef.current.rotation.y += delta * 0.01 * Math.PI;
+      lastX.current = clientX;
+      rotationSpeed.current = delta * 0.01 * Math.PI;
+    }
+  };
+
+  const handleTouchEnd = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setIsRotating(false);
+  };
+
   const handlePointerDown = (e) => {
     e.stopPropagation();
     e.preventDefault();
     setIsRotating(true)
 
     //Check if client uses touchscreen
-    const clientX = e.touches
-      ? e.touches[0].clientX
-      : e.clientX;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     //update the reference for the last client position
     lastX.current = clientX;
   };
@@ -82,7 +106,10 @@ const PolyIsland = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>
     //event listeners for each pointer and key event
     canvas.addEventListener('pointerdown', handlePointerDown);
     canvas.addEventListener('pointerup', handlePointerUp);
-    canvas.addEventListener('pointermove', handlePointerMove)
+    canvas.addEventListener('pointermove', handlePointerMove);
+    canvas.addEventListener('touchstart', handleTouchStart);
+    canvas.addEventListener('touchmove', handleTouchMove);
+    canvas.addEventListener('touchend', handleTouchEnd);
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('keyup', handleKeyUp);
 
@@ -90,11 +117,14 @@ const PolyIsland = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>
       canvas.removeEventListener('pointerdown', handlePointerDown);
       canvas.removeEventListener('pointerup', handlePointerUp);
       canvas.removeEventListener('pointermove', handlePointerMove);
+      canvas.removeEventListener('touchstart', handleTouchStart);
+      canvas.removeEventListener('touchmove', handleTouchMove);
+      canvas.removeEventListener('touchend', handleTouchEnd);
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('keyup', handleKeyUp);
     }
 
-  }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
+  }, [gl, handlePointerDown, handlePointerUp, handlePointerMove, handleTouchStart, handleTouchMove, handleTouchEnd]);
   useFrame(() => {
     // If not rotating, apply damping to slow down the rotation (smoothly)
     if (!isRotating) {
