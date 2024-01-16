@@ -5,6 +5,7 @@ import Island from '../models/Island'
 import Sky from '../models/Sky';
 import Bird from '../models/Bird';
 import Plane from '../models/Plane';
+import PolyIsland from '../models/polyisland';
 import HomeInfo from '../components/HomeInfo';
 
 
@@ -67,20 +68,29 @@ const Home = () => {
           <Sky
             isRotating={isRotating}
           />
-          <Island
+          <PolyIsland
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+            position={islandPosition}
+            rotation={[0.1, 4.7077, 0]}
+            scale={20}
+          />
+          {/* <Island
             isRotating={isRotating}
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
             position={islandPosition}
             rotation={[0.1, 4.7077, 0]}
             scale={islandScale}
-          />
+          /> */}
           <Plane
             isRotating = {isRotating}
             scale = {planeScale}
             position = {planePosition}
             rotation = {[0, 20, 0]}
           />
+          
         </Suspense>
       </Canvas>
       
