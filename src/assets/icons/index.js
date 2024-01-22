@@ -34,6 +34,8 @@ import brain from './brain.svg'
 import pictureinpicture from './pictureinpicture.svg'
 import darkmode from './darkmode.svg'
 import list from './list.svg'
+import joke from './joke.svg'
+
 
 export {
     mongoose,
@@ -72,4 +74,5 @@ export {
     pictureinpicture,
     darkmode,
     list,
+    joke,
 }

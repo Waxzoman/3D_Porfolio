@@ -32,6 +32,7 @@ import {
     pictureinpicture,
     darkmode,
     list,
+    joke,
 } from "../assets/icons";
 
 export const skills = [
@@ -298,5 +299,11 @@ export const projects = [
         description: 'Template website to present ligh/dark mode implementation with vanillajs and store user preferences in local storage',
         link: 'https://waxzoman.github.io/Light-and-dark-mode/',
     },
-    
+    {
+        iconUrl: joke,
+        theme: 'btn-back-blue',
+        name: 'Joke-teller',
+        description: 'Application that uses joke api and turns them into audio with VoiceRSS text-to-speech SDK',
+        link: 'https://waxzoman.github.io/Joke-teller/'
+    }
 ];
