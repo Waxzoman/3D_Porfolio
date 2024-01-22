@@ -273,7 +273,7 @@ const PolyIsland = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>
               material={materials["Material.005"]}
             />
           </group>
-          <group
+          {/* <group
             position={[11.185, 8.141, 4.914]}
             rotation={[0.158, -1.014, 0.011]}
             scale={0.522}
@@ -290,7 +290,7 @@ const PolyIsland = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>
               geometry={nodes.Object_29.geometry}
               material={materials["Material.005"]}
             />
-          </group>
+          </group> */}
           <group
             position={[13.874, 7.631, 8.292]}
             rotation={[-0.079, -1.072, 0.026]}

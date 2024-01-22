@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, webdevcert, tscourse } from "../assets/images";
+import { webdevcert, tscourse } from "../assets/images";
 import {
     mongoose,
     bootstrap,
@@ -26,7 +26,12 @@ import {
     tailwindcss,
     threads,
     typescript,
-    threejs
+    threejs,
+    campground,
+    brain,
+    pictureinpicture,
+    darkmode,
+    list,
 } from "../assets/icons";
 
 export const skills = [
@@ -95,11 +100,11 @@ export const skills = [
     //     name: "Next.js",
     //     type: "Frontend",
     // },
-    // {
-    //     imageUrl: redux,
-    //     name: "Redux",
-    //     type: "State Management",
-    // },
+    {
+        imageUrl: redux,
+        name: "Redux",
+        type: "State Management",
+    },
     // {
     //     imageUrl: sass,
     //     name: "Sass",
@@ -252,21 +257,28 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: campground,
         theme: 'btn-back-red',
         name: 'YelpCamp',
         description: 'YelpCamp is a full CRUD web app with Mongo database running on mongoose ODM. Application has integrated user authentication and authorization with security measures to prevent cross-site scripting. YelpCamp features: full CRUD capability with Express and Mongodb in Nodejs environment, error handling and data validation, Express routing with session and cookies, authorization and authentication on Passportjs, image upload with Cloudinary API, configured Mapbox api, sanitization and security measures against XSS and Mongo injection. ',
         link: 'https://yelpcamp-y3ze.onrender.com/',
     },
     {
-        iconUrl: summiz,
+        iconUrl: brain,
         theme: 'btn-back-yellow',
         name: 'SummarizerGPT',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
         link: 'https://summarizergpt.onrender.com/',
     },
     {
-        iconUrl: threads,
+        iconUrl: list,
+        theme: 'btn-back-orange',
+        name: 'Redux Todo',
+        description: 'A simple Todo application that implements redux with local storage',
+        link: 'https://redux-todo-2mm8.onrender.com/'
+    },
+    {
+        iconUrl: pictureinpicture,
         theme: 'btn-back-green',
         name: 'Picture-in-picture Chrome',
         description: 'Web-application for multi-tasking that generates picture-in-picture mode with Javascript.',
@@ -280,7 +292,7 @@ export const projects = [
         link: 'https://waxzoman.github.io/Infinite-scroll/',
     },
     {
-        iconUrl: estate,
+        iconUrl: darkmode,
         theme: 'btn-back-black',
         name: 'Light/Dark mode',
         description: 'Template website to present ligh/dark mode implementation with vanillajs and store user preferences in local storage',

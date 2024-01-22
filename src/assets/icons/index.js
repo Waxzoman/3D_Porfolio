@@ -29,6 +29,11 @@ import soundoff from './soundoff.png'
 import bootstrap from './bootstrap.svg'
 import mongoose from './mongoose.svg'
 import threejs from './threejs.svg'
+import campground from './campground.svg'
+import brain from './brain.svg'
+import pictureinpicture from './pictureinpicture.svg'
+import darkmode from './darkmode.svg'
+import list from './list.svg'
 
 export {
     mongoose,
@@ -61,5 +66,10 @@ export {
     contact,
     soundon,
     soundoff,
-    threejs
+    threejs,
+    campground,
+    brain,
+    pictureinpicture,
+    darkmode,
+    list,
 }
