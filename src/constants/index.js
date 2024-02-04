@@ -1,4 +1,4 @@
-import { webdevcert, tscourse } from "../assets/images";
+import { webdevcert, tscourse, sqlc } from "../assets/images";
 import {
     mongoose,
     bootstrap,
@@ -33,6 +33,7 @@ import {
     darkmode,
     list,
     joke,
+    mysql,
 } from "../assets/icons";
 
 export const skills = [
@@ -70,6 +71,11 @@ export const skills = [
         imageUrl: github,
         name: "GitHub",
         type: "Version Control",
+    },
+    {
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Database",
     },
     {
         imageUrl: mongodb,
@@ -192,6 +198,25 @@ export const qualifications = [
             "Use TypeScript with ReactJS",
         ]
     },
+    {
+        id: 3,
+        title: "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
+        instructor: "Colt Steele",
+        platform: "Udemy",
+        date: "February 2024",
+        length: "37.5 hours",
+        certificateNumber: "UC-c8e78b17-df23-40bc-a104-23662069b76f",
+        CertUrl: "https://www.ude.my/UC-c8e78b17-df23-40bc-a104-23662069b76f",
+        img: sqlc,
+        description: [
+            "Creating and interacting with SQL databases",
+            "Write complex SQL join queries across multiple tables",
+            "Mastered MySQL 8 Window functions (LEAD, LAG, RANK, etc..)",
+            "Model real world data and generate reports using SQL",
+            "Answer company performance or sales questions using data",
+            "Mastered ins and out of SQL syntax"
+        ]
+    }
 ];
 
 export const sideSkills = [

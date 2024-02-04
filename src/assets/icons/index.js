@@ -35,6 +35,7 @@ import pictureinpicture from './pictureinpicture.svg'
 import darkmode from './darkmode.svg'
 import list from './list.svg'
 import joke from './joke.svg'
+import mysql from './mysql.svg'
 
 
 export {
@@ -75,4 +76,5 @@ export {
     darkmode,
     list,
     joke,
+    mysql,
 }
